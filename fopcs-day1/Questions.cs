@@ -54,13 +54,14 @@ namespace fopcs_day1
                 try
                 {
                     number = Int32.Parse(Console.ReadLine());
-                    Console.WriteLine($"Your number squared is {Math.Pow(number, 2)}");
-                    break;
                 }
                 catch (FormatException)
                 {
                     Console.WriteLine("The number entered is not an integer, please try again: ");
+                    continue;
                 }
+
+                Console.WriteLine($"Your number squared is {Math.Pow(number, 2)}");
             }
         }
 
@@ -78,13 +79,15 @@ namespace fopcs_day1
                 try
                 {
                     number = Double.Parse(Console.ReadLine());
-                    Console.WriteLine($"Your number squared is {Math.Pow(number, 2)}");
-                    break;
                 }
                 catch (FormatException)
                 {
                     Console.WriteLine("Your input was not a number, please try again: ");
+                    continue;
                 }
+
+                Console.WriteLine($"Your number squared is {Math.Pow(number, 2)}");
+
             }
         }
 
@@ -102,13 +105,15 @@ namespace fopcs_day1
                 try
                 {
                     number = Double.Parse(Console.ReadLine());
-                    Console.WriteLine($"Your number is {number:.00}");
-                    break;
                 }
                 catch (FormatException)
                 {
                     Console.WriteLine("Your input was not a number, please try again: ");
+                    continue;
                 }
+
+                Console.WriteLine($"Your number is {number:.00}");
+
             }
         }
     }
