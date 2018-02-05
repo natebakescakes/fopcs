@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace fopcs_day1
 {
-    class Questions
+    class Workshop
     {
 
         /*

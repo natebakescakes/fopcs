@@ -10,11 +10,11 @@ namespace fopcs_day1
     {
         static void Main(string[] args)
         {
-            // Question.Question1();
-            // Question.Question2();
-            // Question.Question3();
-            // Question.Question4();
-            // Questions.Question5();
+            // Workshop.Question1();
+            // Workshop.Question2();
+            // Workshop.Question3();
+            // Workshop.Question4();
+            // Workshop.Question5();
             Quiz.Question();
         }
     }
