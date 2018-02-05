@@ -17,10 +17,26 @@ namespace fopcs_day1
     {
         public static void Question()
         {
-            Console.WriteLine("Please enter the length in cm: ");
-            double number = Double.Parse(Console.ReadLine());
+            double number;
 
-            Console.WriteLine($"{(number / 2.54):0.000}");
+            while (true)
+            {
+                Console.WriteLine("Please enter the length in cm: ");
+
+                try
+                {
+                    number = Double.Parse(Console.ReadLine());
+                    break;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("You did not enter a number, please try again! ");
+                    continue;
+                }
+            }
+
+            Console.WriteLine($"This is your number: {(number / 2.54):0.000}");
+
         }
     }
 }
