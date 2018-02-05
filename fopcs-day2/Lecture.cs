@@ -40,7 +40,6 @@ namespace fopcs_day2
         public static void Work2()
         {
             int a = 5; // initialise a to 5
-            int b = 3;
 
             Console.WriteLine(+a); // 5
             Console.WriteLine(-a); // -5
@@ -59,7 +58,6 @@ namespace fopcs_day2
         public static void Work3()
         {
             int a = 5;
-            int b = 3;
 
             Console.WriteLine(10 - 5 / a); // 9
             Console.WriteLine(10 - 5 / -a); // 11
@@ -76,8 +74,6 @@ namespace fopcs_day2
             Console.WriteLine(a == b); // False
             bool c = (a != b);
             Console.WriteLine(c); // True
-
-            Console.WriteLine(a < a); // False
 
             Console.WriteLine((b > 1) && (a > 10)); // False
             Console.WriteLine((b > 1) & (a > 10)); // False (& still treated as && for C# if both left and right expressions are bool)
