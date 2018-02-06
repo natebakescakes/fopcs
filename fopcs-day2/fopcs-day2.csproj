@@ -45,6 +45,7 @@
     <Compile Include="Lecture.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.cs" />
     <Compile Include="WorkshopSectionB.cs" />
     <Compile Include="WorkshopSectionC.cs" />
   </ItemGroup>

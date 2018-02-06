@@ -51,6 +51,7 @@
     <Compile Include="TestWorkshopSectionB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestWorkshopSectionC.cs" />
+    <Compile Include="TestQuiz.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
