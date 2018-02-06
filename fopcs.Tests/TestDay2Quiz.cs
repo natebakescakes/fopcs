@@ -5,7 +5,7 @@ using fopcs_day2;
 namespace fopcs.Tests
 {
     [TestClass]
-    public class TestQuiz
+    public class TestDay2Quiz
     {
         [TestMethod]
         public void TestInitialAnswer()
