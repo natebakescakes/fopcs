@@ -48,9 +48,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day2WorkshopSectionB.cs" />
+    <Compile Include="TestWorkshopSectionB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Day2WorkshopSectionC.cs" />
+    <Compile Include="TestWorkshopSectionC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -6,7 +6,7 @@ using fopcs_day2;
 namespace fopcs.Tests
 {
     [TestClass]
-    public class Day2WorkshopSectionB
+    public class TestWorkshopSectionB
     {
         [TestMethod]
         public void TestSBQ01()

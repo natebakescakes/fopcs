@@ -86,8 +86,8 @@ namespace fopcs_day2
 
         public static bool Question5a (string number)
         {
-            double temp = Double.Parse(number);
-            double lengthOfString = number.Length;
+            double temp = Double.Parse(number); // Iterable
+            double lengthOfString = number.Length; // Variable length of string
             double check = 0;
 
             while (temp != 0)
