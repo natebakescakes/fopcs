@@ -7,7 +7,7 @@ namespace fopcs.Tests
     [TestClass]
     public class TestDay2Quiz
     {
-        [TestMethod]
+        [TestMethod, Ignore]
         public void TestInitialAnswer()
         {
             Assert.AreEqual(500, Quiz.InitialAnswer(1));
