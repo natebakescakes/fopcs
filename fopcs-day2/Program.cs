@@ -10,7 +10,7 @@ namespace fopcs_day2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a number: ");
+            // Console.WriteLine("Please enter a number: ");
             // double input = Double.Parse(Console.ReadLine());
             // Console.WriteLine(Workshop.Question1(input));
             // Console.WriteLine(Workshop.Question2(input));
@@ -55,8 +55,8 @@ namespace fopcs_day2
             // Console.WriteLine(WorkshopSectionC.Question5(input));
 
             // Section C Question 6
-            string input = Console.ReadLine();
-            Console.WriteLine(WorkshopSectionC.Question5a(input));
+            // string input = Console.ReadLine();
+            // Console.WriteLine(WorkshopSectionC.Question5a(input));
         }
     }
 }

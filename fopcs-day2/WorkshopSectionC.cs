@@ -51,22 +51,13 @@ namespace fopcs_day2
 
         public static double Question4 (double distance)
         {
-            distance = Math.Ceiling(distance * 10);
+            distance = Math.Ceiling(distance * 10); // in 100 metres
 
             double totalFare = 0;
 
-            if (distance >= 0)
-            {
-                totalFare += 2.4;
-            }
-            if (distance > 5)
-            {
-                totalFare += Math.Min(85, distance - 5) * 0.04;
-            }
-            if (distance > 90)
-            {
-                totalFare += (distance - 90) * 0.05;
-            }
+            if (distance >= 0) totalFare += 2.4;
+            if (distance > 5) totalFare += Math.Min(85, distance - 5) * 0.04;
+            if (distance > 90) totalFare += (distance - 90) * 0.05;
 
             return totalFare;
         }
