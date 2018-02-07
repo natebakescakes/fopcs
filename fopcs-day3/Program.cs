@@ -28,9 +28,9 @@ namespace fopcs_day3
             // WorkshopSectionE.Question5();
             // WorkshopSectionE.Question6();
 
-            // WorkshopSectionF.Question1a();
+            WorkshopSectionF.Question1a();
             // WorkshopSectionF.Question1b();
-            WorkshopSectionF.Question2();
+            // WorkshopSectionF.Question2();
         }
     }
 }

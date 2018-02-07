@@ -12,12 +12,12 @@ namespace fopcs_day3
         {
             Console.WriteLine("Please enter your phrase: ");
             string s = Console.ReadLine();
-            char[] vowels = new char[] { 'A', 'E', 'I', 'O', 'U' };
+            string vowels = "AEIOU";
             int vowelCount = 0;
 
             for (int i = 0; i < s.Length; i++)
             {
-                if (vowels.Contains<char>(s.ToUpper()[i]))
+                if (vowels.Contains(s.ToUpper()[i]))
                 {
                     vowelCount++;
                 }
