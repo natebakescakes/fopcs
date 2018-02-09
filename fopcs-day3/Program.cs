@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace fopcs_day3
+﻿namespace fopcs_day3
 {
     class Program
     {
@@ -28,9 +22,13 @@ namespace fopcs_day3
             // WorkshopSectionE.Question5();
             // WorkshopSectionE.Question6();
 
-            WorkshopSectionF.Question1a();
+            // WorkshopSectionF.Question1a();
             // WorkshopSectionF.Question1b();
             // WorkshopSectionF.Question2();
+
+            // Quiz.InitialAnswer();
+            Quiz.RevisedAnswer();
+            // Quiz.LecturerAnswer();
         }
     }
 }
