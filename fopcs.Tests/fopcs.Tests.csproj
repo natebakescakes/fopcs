@@ -55,6 +55,7 @@
     <Compile Include="TestWorkshopSectionD.cs" />
     <Compile Include="TestWorkshopSectionE.cs" />
     <Compile Include="TestWorkshopSectionF.cs" />
+    <Compile Include="TestWorkshopSectionG.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -67,6 +68,10 @@
     <ProjectReference Include="..\fopcs-day3\fopcs-day3.csproj">
       <Project>{143c6935-df8e-4af8-957a-29b93b61ca47}</Project>
       <Name>fopcs-day3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\fopcs-day4\fopcs-day4.csproj">
+      <Project>{71889337-38d0-4ac0-8c5b-247fe948cc9d}</Project>
+      <Name>fopcs-day4</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
