@@ -63,5 +63,11 @@ namespace fopcs.Tests
         {
             Assert.AreEqual(2891.67, WorkshopSectionG.AverageSales(testData), 0.01);
         }
+
+        [TestMethod]
+        public void TestOverallAverage()
+        {
+            Assert.AreEqual(52.83, WorkshopSectionG.OverallAverage(markData), 0.01);
+        }
     }
 }

@@ -183,14 +183,24 @@ namespace fopcs_day4
 
                 for (int j = 0; j < marks.GetLength(0); j++)
                 {
-                    sumMarksXMinusM += (marks[j, i] - AverageMarks(marks)[i]);
+                    sumMarksXMinusM += Math.Pow((marks[j, i] - AverageMarks(marks)[i]), 2);
                 }
 
-                Console.WriteLine(sumMarksXMinusM);
-                //stddev[i] = Math.Sqrt(Math.Pow(sumMarksXMinusM, 2) / marks.GetLength(0));
+                stddev[i] = Math.Sqrt(sumMarksXMinusM / marks.GetLength(0));
             }
 
             return stddev;
+        }
+
+        public static double OverallAverage(int[,] marks)
+        {
+            double sumAverageMarks = 0;
+
+            for (int i = 0; i < AverageMarks(marks).Length; i++)
+            {
+                sumAverageMarks += AverageMarks(marks)[i];
+            }
+            return sumAverageMarks / marks.GetLength(1);
         }
 
         public static void Question4()
