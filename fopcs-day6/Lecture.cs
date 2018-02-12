@@ -107,5 +107,103 @@ namespace fopcs_day6
             Console.WriteLine($"[ {String.Join(", ", A)} ]");
         }
         #endregion
+
+        #region Program2()
+        public static void Program2()
+        {
+            int x = 3;
+            int y = 4;
+
+            Console.WriteLine(Multiply(x, y));
+
+            Swap(ref x, ref y);
+            Console.WriteLine($"{x}, {y}"); // 3, 4
+        }
+
+        public static void Swap(ref int a, ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
+        public static int Multiply(int a, int b)
+        {
+            return a * b;
+        }
+        #endregion
+
+        #region Program3()
+        public static void Program3()
+        {
+            int[] x = new int[] { 1, 2, 3, };
+            Console.WriteLine($"{{ {String.Join(", ", x)} }}"); // { 1, 2, 3 }
+
+            TimesTen(x);
+            Console.WriteLine($"{{ {String.Join(", ", x)} }}"); // { 10, 20, 30 }
+
+            DoubleTheSize(x); // pass by value (scoped method variable will copy the reference to X)
+            Console.WriteLine(x.Length); // 3
+
+            // pass by reference (scoped method variable will pass the reference of the reference to
+            // the array in the heap)
+            DoubleTheSize(ref x); 
+            Console.WriteLine(x.Length); // 6
+
+            x = DoubleTheSizeWithNoRef(x); // Assign the new address of the returned array to the x variablegh
+            Console.WriteLine(x.Length); // 12
+
+            // out keyword will pass by reference variables that are meant as output only
+            // allows reference to uninitialized variable
+            //
+            // ref keyword requires variable passed into method to be initialised as it
+            // assumes that you will need to use it as an input
+        }
+
+        private static int[] DoubleTheSizeWithNoRef(int[] A)
+        {
+            int[] B = new int[A.Length * 2];
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                B[i] = A[i];
+            }
+
+            return B;
+        }
+
+        public static void DoubleTheSize(ref int[] A)
+        {
+            int[] B = new int[A.Length * 2];
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                B[i] = A[i];
+            }
+
+            A = B;
+        }
+
+        public static void DoubleTheSize(int[] A)
+        {
+            int[] B = new int[A.Length * 2];
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                B[i] = A[i];
+            }
+
+            A = B; // modifying the address of A which does not affect the address of outside the method.
+            // If you which to modify the outside address, use ref keyword
+        }
+        
+        public static void TimesTen(int[] A)
+        {
+            for (int i = 0; i < A.Length; i++)
+            {
+                A[i] = A[i] * 10;
+            }
+        }
+        #endregion
     }
 }

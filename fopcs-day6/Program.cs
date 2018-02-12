@@ -11,6 +11,10 @@ namespace fopcs_day6
         static void Main(string[] args)
         {
             //Lecture.Program1();
+            //Lecture.Program2();
+            //Lecture.Program3();
+
+            //WorkshopSectionH.Question11();
         }
     }
 }
