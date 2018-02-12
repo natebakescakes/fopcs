@@ -57,6 +57,7 @@
     <Compile Include="TestWorkshopSectionF.cs" />
     <Compile Include="TestWorkshopSectionG.cs" />
     <Compile Include="TestWorkshopSectionH.cs" />
+    <Compile Include="TestDay5Quiz.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
