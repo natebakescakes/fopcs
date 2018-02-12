@@ -58,11 +58,19 @@
     <Compile Include="TestWorkshopSectionG.cs" />
     <Compile Include="TestWorkshopSectionH.cs" />
     <Compile Include="TestDay5Quiz.cs" />
+    <Compile Include="TestPrintSeriesOfNumbers.cs" />
+    <Compile Include="TestSingleDimensionArray.cs" />
+    <Compile Include="TestMultiDimensionArray.cs" />
+    <Compile Include="TestMethods.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdditionalExercises\AdditionalExercises.csproj">
+      <Project>{5b697fd2-e0cf-4ba2-857e-2211023890cd}</Project>
+      <Name>AdditionalExercises</Name>
+    </ProjectReference>
     <ProjectReference Include="..\fopcs-day2\fopcs-day2.csproj">
       <Project>{06edb09d-6fa5-4f97-a377-4025656df896}</Project>
       <Name>fopcs-day2</Name>
@@ -78,6 +86,10 @@
     <ProjectReference Include="..\fopcs-day5\fopcs-day5.csproj">
       <Project>{8743BCFB-6545-4BB3-B5C3-A9628C6180B2}</Project>
       <Name>fopcs-day5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\fopcs-day6\fopcs-day6.csproj">
+      <Project>{d1d47adf-a8d1-4251-8a40-088c94e5b33d}</Project>
+      <Name>fopcs-day6</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
