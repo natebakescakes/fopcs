@@ -32,7 +32,7 @@ namespace AdditionalExercises
             {
                 for (int j = i+1; j < newArr.Length; j++)
                 {
-                    if (newArr[i] > newArr[j])
+                    if (newArr[i] < newArr[j])
                     {
                         int temp = newArr[i];
                         newArr[i] = newArr[j];
@@ -59,7 +59,7 @@ namespace AdditionalExercises
                 if (newArr[index] == num)
                     return index;
 
-                if (newArr[index] > num)
+                if (newArr[index] < num)
                 {
                     lowerBound = index;
                 }

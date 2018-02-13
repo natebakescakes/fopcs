@@ -16,6 +16,8 @@ namespace AdditionalExercises
             //Methods.PrintTriangle(Methods.TriangleType.InvertedCenter, 10);
             //Methods.PrintTriangle(Methods.TriangleType.InvertedLeftAligned, 10);
             //Methods.PrintTriangle(Methods.TriangleType.InvertedRightAligned, 10);
+
+            Methods.EmailCheck("nateb@akescakes@gmail.com");
         }
     }
 }
