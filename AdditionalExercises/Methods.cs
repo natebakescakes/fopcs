@@ -107,7 +107,7 @@ namespace AdditionalExercises
             for (int i = 0; i < height; i++)
             {
                 s = s.Substring(0, height - i);
-                string format = "{0," + height + "}";
+                string format = "{0," + height + "}"; // {0, 10}
                 Console.WriteLine(format, s);
             }
         }
